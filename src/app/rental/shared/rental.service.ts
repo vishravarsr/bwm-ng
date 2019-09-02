@@ -18,7 +18,7 @@ export class RentalService {
         shared: false,
         createdAt: "30:12:2018"
       }];
-    
+
       public getRentalById(rentalId: string): Observable<Rental> {
 
         return new Observable<Rental>(
@@ -27,12 +27,10 @@ export class RentalService {
                    const foundRental = this.rentals.find((rental) => {
                         return rental.id == rentalId;
                     });
-
                     observer.next(foundRental);
-
                 }, 500);
 
-                
+
             }
         );
       }
