@@ -6,16 +6,16 @@ import { Rental } from '../shared/rental.model';
 @Component({
   selector: 'bwm-rental-detail',
   templateUrl: './rental-detail.component.html',
-  styleUrls: ['./rental-detail.component.css']
+  styleUrls: ['./rental-detail.component.scss']
 })
 export class RentalDetailComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,
-              private rentalService: RentalService) 
-  { 
+              private rentalService: RentalService)
+  {
 
   }
-  
+
   rental: Rental;
 
   ngOnInit() {
